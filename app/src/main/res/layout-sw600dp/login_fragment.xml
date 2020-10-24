@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="login"
+            type="com.samir.foodvloggers.LoginViewModel" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <ImageView
+                android:id="@+id/image_vieew"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/background_image_upper" />
+
+            <Button
+                android:id="@+id/new_account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/create_new_account_button"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:layout_marginTop="45dp"/>
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/email_login_input_field"
+                android:hint="@string/email_field_string"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/password_login_input_field"
+                android:hint="@string/password_field_string"
+                android:inputType="textPassword"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:id="@+id/credential_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credential_warning"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/login_button" />
+
+            <Button
+                android:id="@+id/google_signIn_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/signin_with_google_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

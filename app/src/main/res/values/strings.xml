@@ -1,0 +1,36 @@
+<resources>
+    <!--Login and Signup page strings-->
+    <string name="app_name">Foodvloggers</string>
+    <string name="email_field_string">Your Email</string>
+    <string name="password_field_string">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="im_vlogger">I\'m a vlogger</string>
+    <string name="not_vlogger">I\'m not a vlogger</string>
+    <string name="user_name">Your Name</string>
+
+    <!--Warning Texts-->
+    <string name="password_min_character_limit_error">Minimum 6 characters</string>
+    <string name="password_max_character_limit_error">Maximum 12 characters</string>
+    <string name="confirm_password_warning_signup">Password does not match</string>
+    <string name="email_warning_signup">Please write a valid email</string>
+    <string name="name_warning_signup">Maximum 40 characters allowed</string>
+
+    <string name="credential_warning">Wrong email or password!</string>
+    <string name="title_activity_places">Map</string>
+
+    <!-- Ends_Login and Signup page strings-->
+
+    <string name="google_places_api">AIzaSyDD7QekSVaYeVi74hEsGSIj9ZwEfe9SN_g</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--  Server credentials  -->
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">W6mn5BJEP0bDVBcXMxcY7QZc4O1Z8k7WkMh36b5N</string>
+    <string name="back4app_client_key">rFXe5UI3358lbIRGI39sh0jHnEm3czVLuZDoGjZ6</string>
+
+    <!-- Youtube api key -->
+    <string name="youtube_data_api_key_v3">AIzaSyABjVCYIlzFqHOVbBolTO2nZhIQbec6Rdw</string>
+
+</resources>

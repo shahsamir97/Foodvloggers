@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/image_vieew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:baselineAligned="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/upper_bachground_signup"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/back_arrow" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/im_vlogger_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/im_a_vlogger_button" />
+
+                <Button
+                    android:id="@+id/not_vlogger_button"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/im_not_vlogger_button" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_fields_signup"
+                android:hint="@string/user_name"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp" />
+            <TextView
+                android:id="@+id/name_input_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password does not match"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"/>
+
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_fields_signup"
+                android:hint="@string/email_field_string"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp" />
+            <TextView
+                android:id="@+id/email_input_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password does not match"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"/>
+
+
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_fields_signup"
+                android:hint="@string/password_field_string"
+                android:inputType="textPassword"
+                android:paddingStart="20dp" />
+            <TextView
+                android:id="@+id/password_input_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password does not match"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"/>
+
+
+            <EditText
+                android:id="@+id/confirm_password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_fields_signup"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp" />
+            <TextView
+                android:id="@+id/confirm_password_input_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password does not match"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"/>
+
+            <Button
+                android:id="@+id/sign_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/signup_button" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

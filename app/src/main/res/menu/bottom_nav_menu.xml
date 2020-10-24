@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/audienceProfile"
+        android:icon="@drawable/ic_account_circle_black_48dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/trendings"
+        android:icon="@drawable/ic_fiber_new_black_48dp"
+        android:title="Trending"
+        android:visible="true" />
+
+</menu>

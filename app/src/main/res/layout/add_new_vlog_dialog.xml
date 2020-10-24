@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Restaurant Name" />
+
+    <EditText
+        android:id="@+id/restaurant_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Restaurant Location" />
+
+    <EditText
+        android:id="@+id/video_URL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Youtube video URL" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Cancel"
+            android:textColor="@color/textColor_OnPinkBackground"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Ok"
+            android:textColor="@color/textColor_OnPinkBackground"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

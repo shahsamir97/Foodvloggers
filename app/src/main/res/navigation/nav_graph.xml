@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contentMain">
+
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.samir.foodvloggers.SignUp"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment" >
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_signUp_to_contentMain"
+            app:destination="@id/contentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.samir.foodvloggers.Login"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_contentMain"
+            app:destination="@id/contentMain" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.samir.foodvloggers.MapsActivity"
+        android:label="MapsActivity" />
+    <activity
+        android:id="@+id/contentMain"
+        android:name="com.samir.foodvloggers.ContentMain"
+        android:label="ContentMain" />
+</navigation>
